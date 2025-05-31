@@ -5,7 +5,7 @@ const CommonHeadInfo = ({commonHeadInfo}) => {
         <>
             <p className="lg:w-[1000px] m-auto font-normal text-xl text-[#555555] text-center mt-4">
                 {commonHeadInfo}
-            </p>
+            </p> 
         </>
     )
 }
