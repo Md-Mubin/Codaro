@@ -17,4 +17,6 @@ app.use(router)
 
 db()
 
-module.exports = app
+app.listen(process.env.PORT, () => {
+    console.log("port connect")
+})
