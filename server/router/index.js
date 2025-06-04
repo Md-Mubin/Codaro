@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.use(process.env.VERSION_API, apiRoute)
 
-router.use("/", (req,res)=>{
+router.get("/", (req,res)=>{
     res.send("Hello! Welcome To The Server 🙂")
 })
 
