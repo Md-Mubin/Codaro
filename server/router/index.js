@@ -5,7 +5,7 @@ const router = express.Router()
 router.use(process.env.VERSION_API, apiRoute)
 
 router.use("*", (req,res)=>{
-    res.status(404).send("Page Not Found")
+    return res.status(404).send("Page Not Found")
 })
 
 module.exports = router
