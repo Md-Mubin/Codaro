@@ -31,9 +31,9 @@ const inquriesAuth = async (req, res) => {
 
         newInquries.save()
 
-        return res.status(200).send({ success: "Request Successfull" })
+        res.status(200).send({ success: "Request Successfull" })
     } catch (error) {
-        return res.status(500).send({ errMsg: "Server Error" })
+        res.status(500).send({ errMsg: "Server Error" })
     }
 }
 
